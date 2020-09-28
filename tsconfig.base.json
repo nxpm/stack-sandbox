@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@stack-sandbox/api/data-access": ["libs/api/data-access/src/index.ts"],
+      "@stack-sandbox/api/feature-core": ["libs/api/feature-core/src/index.ts"],
+      "@stack-sandbox/api/feature-auth": ["libs/api/feature-auth/src/index.ts"],
+      "@stack-sandbox/admin/data-access": ["libs/admin/data-access/src/index.ts"],
+      "@stack-sandbox/admin/feature-core": ["libs/admin/feature-core/src/index.ts"],
+      "@stack-sandbox/admin/feature-shell": ["libs/admin/feature-shell/src/index.ts"],
+      "@stack-sandbox/admin/feature-auth": ["libs/admin/feature-auth/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
