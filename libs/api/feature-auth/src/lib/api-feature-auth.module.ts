@@ -1,13 +1,9 @@
 import { Module } from '@nestjs/common'
-
-import { ApiFeatureAuthController } from './api-feature-auth.controller'
+import { ApiDataAccessAuthModule } from '@stack-sandbox/api/data-access-auth'
 import { ApiFeatureAuthResolver } from './api-feature-auth.resolver'
-import { ApiFeatureAuthService } from './api-feature-auth.service'
 
 @Module({
-  controllers: [ApiFeatureAuthController],
-  exports: [],
-  imports: [],
-  providers: [ApiFeatureAuthResolver, ApiFeatureAuthService],
+  imports: [ApiDataAccessAuthModule],
+  providers: [ApiFeatureAuthResolver],
 })
 export class ApiFeatureAuthModule {}

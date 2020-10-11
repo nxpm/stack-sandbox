@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'api-feature-auth',
-  preset: '../../../jest.config.js',
+  displayName: 'api-feature-auth',
+  preset: '../../../jest.preset.js',
   globals: {
     'ts-jest': {
       tsConfig: '<rootDir>/tsconfig.spec.json',
